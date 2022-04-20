@@ -1,10 +1,14 @@
-import { render, screen } from "@testing-library/react";
+import {
+  render,
+  screen,
+  waitForElementToBeRemoved,
+} from "@testing-library/react";
 import React from "react";
 
 import { Heavy } from "./heavy";
 
 describe(Heavy, () => {
-  it("renders a loading message when data hasn't loaded yet", () => {
+  it("renders a loading message when data hasn't loaded yet", async () => {
     render(<Heavy endpoint="https://www.google.com" />);
     screen.getByText("loading...");
     await waitForElementToBeRemoved(() => screen.queryByText("loading..."));
