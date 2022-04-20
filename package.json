@@ -1,0 +1,35 @@
+{
+  "engines": {
+    "node": "16"
+  },
+  "name": "props-mocks-and-context-talk",
+  "version": "1.0.0",
+  "description": "Companion repository for my Props, Mocks, and Context: Unit Testing Heavy Components talk.",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "context",
+    "mocks",
+    "props",
+    "react",
+    "talk",
+    "testing",
+    "unit tests"
+  ],
+  "author": "Josh Goldberg <me@joshuakgoldberg.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cross-fetch": "^3.1.5",
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/react": "^13.1.1",
+    "babel-jest": "^27.5.1",
+    "fetch-mock": "^9.11.0",
+    "jest": "^27.5.1"
+  }
+}
